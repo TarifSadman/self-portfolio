@@ -17,8 +17,8 @@ const Portfolio = () => {
       description:
         "An educational website is a huge interactive platform to present various information for people.",
       technologies: "Html | CSS | Javascript | React Js",
-      link: "https://educational-website-reactjs.netlify.app/",
-      github: "https://github.com/Rasif-Taghizada/Educational-Website-ReactJs",
+      link: "",
+      github: "https://github.com/TarifSadman/Social_Icon-Hoever",
     },
     {
       id: 2,
@@ -27,8 +27,8 @@ const Portfolio = () => {
       description:
         "The COVID Tracking Project collects and publishes the most complete testing data available for all areas of the world.",
       technologies: "React | Redux",
-      link: "https://covid-19-tracker-weld-nu.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Covid-19-Tracking",
+      link: "",
+      github: "https://github.com/TarifSadman/QR-Component",
     },
     {
       id: 3,
@@ -41,13 +41,13 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Startup Landing Page",
+      title: "Safari House",
       img: IMG3,
       description:
-        "A dedicated, standalone web page built for specific campaigns and target audiences.",
-      technologies: "Html | CSS | JavaScript | Next Js",
-      link: "https://alpha-agency-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Alpha-Agency-Project",
+        "A dedicated website for hotel reservations.",
+      technologies: "Html | CSS | JavaScript | React Js",
+      link: "https://safarihouse.cisstaging.com/",
+      github: "",
     },
     {
       id: 5,

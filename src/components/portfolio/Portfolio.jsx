@@ -36,8 +36,8 @@ const Portfolio = () => {
       img: IMG2,
       description: "This site is a kind of social media platform. You can register and share your posts.",
       technologies: "React | Redux",
-      link: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
-      github: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
+      link: "",
+      github: "",
     },
     {
       id: 4,
@@ -56,19 +56,9 @@ const Portfolio = () => {
       description:
         "For when you need a fast funny joke, here are some short jokes to get anyone giggling.",
       technologies: "Html | Styled-components | Typescript",
-      link: "https://jokes-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Joke-App",
-    },
-    {
-      id: 6,
-      title: "Fs Poster Website",
-      img: IMG6,
-      description:
-        "Real-world group project which is still in progress and will provide educational platform for future young developers",
-      technologies: "Html | Scss | Javascript",
-      link: "https://fs-poster-project.netlify.app/",
-      github: "https://github.com/Rasif-Taghizada/Fs-Poster-Project",
-    },
+      link: "",
+      github: "",
+    }
   ];
 
   return (

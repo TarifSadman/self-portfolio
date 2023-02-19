@@ -55,11 +55,11 @@ header {
 
 @media screen and (max-width: 600px){
   header {
-    height: 100vh;
+    height: 60vh;
   }
 
   .header__socials,
   .scroll__down {
-    display: none;
+    display: flex;
   }
 }

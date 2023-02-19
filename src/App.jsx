@@ -1,4 +1,5 @@
 import React from 'react';
+import { FloatButton } from 'antd';
 import Contact from './components/contact/Contact';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
@@ -20,6 +21,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <FloatButton.BackTop duration={300} />
     </>
   )
 }

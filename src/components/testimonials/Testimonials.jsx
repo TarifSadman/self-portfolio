@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './testimonials.css';
+import { Autoplay } from 'swiper';
 
 const Testimonials = () => {
   const testimonials = [
@@ -55,9 +56,13 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <Swiper 
         className="container testimonials__container"
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
+        autoplay={{
+          delay: 3000
+        }}
+        speed={6000}
         pagination={{ clickable: true }}
         >
         {testimonials.map((test) => (

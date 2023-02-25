@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { EffectFade, Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 
 const Header = () => {
   const header = [
@@ -28,14 +28,13 @@ const Header = () => {
         <Swiper 
         spaceBetween={40}
         slidesPerView={1}
-        effect={"fade"}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
         speed={5000}
         loop={true}
-        modules={[EffectFade, Autoplay]}
+        modules={[Autoplay]}
         >
 
         {header.map((test) => (

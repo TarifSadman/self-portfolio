@@ -39,7 +39,7 @@ const Header = () => {
 
         {header.map((test) => (
           <SwiperSlide key={test.id}>
-          <small>{test.test}</small>
+          <p style={{ fontSize: 19}}>{test.test}</p>
         </SwiperSlide>
         ))}
       </Swiper>

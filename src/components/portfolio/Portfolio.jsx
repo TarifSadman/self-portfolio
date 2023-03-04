@@ -1,6 +1,6 @@
 import React from "react";
 import IMG1 from "../../assets/Educational Website.jpg";
-import IMG2 from "../../assets/RubyCode Blog Project.jpg";
+import IMG2 from "../../assets/durham-dash.png";
 import IMG3 from "../../assets/safari.png";
 import IMG4 from "../../assets/Covid-19 Project.jpg";
 import IMG5 from "../../assets/Jokes Project.jpg";
@@ -31,11 +31,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "RubyCode Blog Project",
+      title: "Durham School",
       img: IMG2,
-      description: "This site is a kind of social media platform. You can register and share your posts.",
-      technologies: "React | Redux",
-      link: "",
+      description: "This is a management solution for Durham Public Schools, Durham.",
+      technologies: "React",
+      link: "https://ds.concisetc.com/",
       github: "",
     },
     {

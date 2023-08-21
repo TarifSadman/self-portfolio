@@ -44,10 +44,10 @@ const Testimonials = () => {
     },
     {
       id: 5,
-      link: 'https://www.linkedin.com/in/elshad-bashirov-1907a1213/',
-      name: 'Elshad Bashirov',
-      role: 'Software Developer',
-      test: "Throughout all our collaborations, Tarif has always conducted herself politely and kindly. He comes across as someone that's always willing to help and puts the team ahead of himself. But beneath this, I see a strength and determination to distinguish himself. He's not only someone I highly recommend but is also someone I greatly respect.",
+      link: 'https://www.linkedin.com/in/hasanmorshed/',
+      name: 'Hasan Morshed',
+      role: 'SEO Specialist',
+      test: "I am delighted to write a recommendation for Tarif, a highly skilled and dedicated professional whom I have had the privilege of knowing both personally and professionally. I had the pleasure of working alongside Tarif on various projects, and I am truly impressed by his expertise in JavaScript, React.js, HTML, and CSS. Tarif's proficiency in JavaScript and React.js is truly remarkable. His ability to architect and develop complex web applications showcases his deep understanding of these technologies. I have witnessed firsthand how Tarif can transform innovative ideas into functional and aesthetically pleasing user interfaces. His attention to detail and commitment to writing clean, efficient code is truly commendable. Furthermore, Tarif's command over HTML and CSS is truly impressive. He has an innate ability to craft visually appealing and responsive designs that enhance user experiences. His keen eye for design aesthetics combined with his technical skills make him a standout professional in the field. Aside from his technical prowess, Tarif is an excellent team player and communicator. He collaborates effectively with team members, actively contributes to discussions, and readily shares his knowledge with others. His positive attitude and strong work ethic create a motivating and productive work environment. In summary, I wholeheartedly recommend Tarif for any project or role that requires expertise in JavaScript, React.js, HTML, and CSS. His dedication, skills, and ability to deliver high-quality results make him an invaluable asset to any team. I am confident that Tarif will continue to excel and make significant contributions in his professional journey. Please feel free to reach out to me if you require any further insights into Tarif's exceptional capabilities.",
     },
   ];
   return (

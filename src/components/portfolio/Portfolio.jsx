@@ -1,33 +1,32 @@
 import React from "react";
-import IMG1 from "../../assets/Educational Website.jpg";
+import IMG1 from "../../assets/quiz.png";
 import IMG2 from "../../assets/durham-dash.png";
 import IMG3 from "../../assets/safari.png";
-import IMG4 from "../../assets/Covid-19 Project.jpg";
-import IMG5 from "../../assets/Jokes Project.jpg";
-
+import IMG4 from "../../assets/crud.png";
+import IMG5 from "../../assets/gituserfind.png";
 import "./portfolio.css";
-//Portfolio function
+
 const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Educational Website with React.js",
+      title: "Quiz Application",
       img: IMG1,
       description:
-        "An educational website is a huge interactive platform to present various information for people.",
-      technologies: "Html | CSS | Javascript | React Js",
-      link: "",
-      github: "https://github.com/TarifSadman/Social_Icon-Hoever",
+        "A quiz application using React.js and Ant Design (antd) UI components, providing an engaging and intuitive user experience. Authentication is handled seamlessly through Firebase, ensuring a secure and personalized quiz-taking experience.",
+      technologies: "Javascript | React Js | Firebase",
+      link: "https://siimple-quiz-app.netlify.app/",
+      github: "https://github.com/TarifSadman/Quiz-Application",
     },
     {
       id: 2,
-      title: "Covid-19 Tracking App",
+      title: "CRUD Application",
       img: IMG4,
       description:
-        "The COVID Tracking Project collects and publishes the most complete testing data available for all areas of the world.",
-      technologies: "React | Redux",
-      link: "",
-      github: "https://github.com/TarifSadman/QR-Component",
+        "A compact CRUD application with ReactJS and Supabase for the database, complemented by Ant Design (antd) UI components for an intuitive user interface. This application facilitates data management, offering functions for creating, reading, updating, and deleting records. The integration of React, Supabase, and Ant Design ensures a seamless and efficient user experience for data manipulation.",
+      technologies: "React | Supabase | Ant Design",
+      link: "https://ssupabase-crud.netlify.app/",
+      github: "https://github.com/TarifSadman/supabase-int",
     },
     {
       id: 3,
@@ -45,18 +44,18 @@ const Portfolio = () => {
       description:
         "A dedicated website for hotel reservations.",
       technologies: "Html | CSS | JavaScript | React Js",
-      link: "https://safarihouse.cisstaging.com/",
+      link: "http://safarihousehotel.datalibrary.io/",
       github: "",
     },
     {
       id: 5,
-      title: "Jokes Project with Typescript",
+      title: "Github User Finder",
       img: IMG5,
       description:
-        "For when you need a fast funny joke, here are some short jokes to get anyone giggling.",
-      technologies: "Html | Styled-components | Typescript",
-      link: "",
-      github: "",
+        "A GitHub user search application using React.js, enriched with components from the Ant Design (antd) UI library to create an attractive and user-friendly interface. The app seamlessly leverages GitHub's REST APIs, integrated via the Axios package, to enable users to search for and discover GitHub users effortlessly.",
+      technologies: "React",
+      link: "https://search-user-geethub.netlify.app/",
+      github: "https://github.com/TarifSadman/github-user-search",
     }
   ];
 

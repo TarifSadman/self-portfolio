@@ -1,6 +1,6 @@
 import React from "react";
 import IMG1 from "../../assets/quiz.png";
-import IMG2 from "../../assets/durham-dash.png";
+import IMG2 from "../../assets/landing.png";
 import IMG3 from "../../assets/safari.png";
 import IMG4 from "../../assets/crud.png";
 import IMG5 from "../../assets/gituserfind.png";
@@ -30,11 +30,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Durham School",
+      title: "Landing Page",
       img: IMG2,
-      description: "This is a management solution for Durham Public Schools, Durham.",
+      description: "This is a demo landing page built with React.",
       technologies: "React",
-      link: "https://ds.concisetc.com/",
+      link: "https://lunding-page.netlify.app/",
       github: "",
     },
     {

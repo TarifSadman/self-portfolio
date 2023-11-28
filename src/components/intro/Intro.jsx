@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
-import ME from '../../assets/Tarif_image.png';
 import "./intro.css";
 
 const Intro = () => {
+  const [dp, setDp] = useState(null);
+
+  useEffect(() => {
+    axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
+      .then((res) => {
+        setDp(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  
   return (
     <section id="about">
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <img src={ME} alt="" />
+          <img src={dp?.dp} alt="" />
         </div>
         <div className="about__content">
           <div className="about__cards">

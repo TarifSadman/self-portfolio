@@ -11,7 +11,7 @@ const Intro = () => {
     axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
       .then((res) => {
         setDp(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => console.log(err));
   }, []);

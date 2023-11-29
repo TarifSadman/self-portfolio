@@ -1,17 +1,27 @@
-import React from "react";
-import IMG1 from "../../assets/quiz.png";
-import IMG2 from "../../assets/landing.png";
-import IMG3 from "../../assets/safari.png";
-import IMG4 from "../../assets/crud.png";
-import IMG5 from "../../assets/gituserfind.png";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./portfolio.css";
 
 const Portfolio = () => {
+
+  const [projectsImg, setProjectsImg] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
+      .then((res) => {
+        setProjectsImg(res.data.project_imgs);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  
+  
+   
   const soloProjects = [
     {
       id: 1,
       title: "Quiz Application",
-      img: IMG1,
+      img: projectsImg[3],
       description:
         "A quiz application using React.js and Ant Design (antd) UI components, providing an engaging and intuitive user experience. Authentication is handled seamlessly through Firebase, ensuring a secure and personalized quiz-taking experience.",
       technologies: "Javascript | React Js | Firebase",
@@ -21,7 +31,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "CRUD Application",
-      img: IMG4,
+      img: projectsImg[0],
       description:
         "A compact CRUD application with ReactJS and Supabase for the database, complemented by Ant Design (antd) UI components for an intuitive user interface. This application facilitates data management, offering functions for creating, reading, updating, and deleting records. The integration of React, Supabase, and Ant Design ensures a seamless and efficient user experience for data manipulation.",
       technologies: "React | Supabase | Ant Design",
@@ -31,7 +41,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Landing Page",
-      img: IMG2,
+      img: projectsImg[2],
       description: "This is a demo landing page built with React.",
       technologies: "React",
       link: "https://lunding-page.netlify.app/",
@@ -40,7 +50,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Safari House",
-      img: IMG3,
+      img: projectsImg[4],
       description:
         "A dedicated website for hotel reservations.",
       technologies: "Html | CSS | JavaScript | React Js",
@@ -50,7 +60,7 @@ const Portfolio = () => {
     {
       id: 5,
       title: "Github User Finder",
-      img: IMG5,
+      img: projectsImg[1],
       description:
         "A GitHub user search application using React.js, enriched with components from the Ant Design (antd) UI library to create an attractive and user-friendly interface. The app seamlessly leverages GitHub's REST APIs, integrated via the Axios package, to enable users to search for and discover GitHub users effortlessly.",
       technologies: "React",

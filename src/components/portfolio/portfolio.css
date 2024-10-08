@@ -10,6 +10,9 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .portfolio__item:hover {
@@ -20,7 +23,22 @@
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 30%;
+    height: 200px;
+}
+
+.portfolio__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.5rem;
+}
+
+.portfolio__item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio__item h3 {
@@ -34,12 +52,31 @@
 
 .portfolio__item-cta {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
+    gap: 1rem; /* Space between buttons */
+    margin-top: auto; /* Push buttons to the bottom */
 }
 
-.portfolio__item-content {
-    height: 45%;
+.portfolio__item-cta a {
+    flex: 1; /* Allow buttons to grow equally */
+    padding: 0.5rem 1rem; /* Add padding for better appearance */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Optional: Add border radius */
+    transition: background-color 0.3s ease; /* Optional: Add transition for hover effects */
+}
+
+.btn {
+    background-color: var(--color-secondary); /* Default button color */
+    color: white; /* Button text color */
+}
+
+.btn-primary {
+    background-color: var(--color-primary); /* Primary button color */
+    color: white; /* Button text color */
+}
+
+/* Optional: Add hover effect */
+.btn:hover, .btn-primary:hover {
+    opacity: 0.8; /* Slightly fade on hover */
 }
 
 @media screen and (max-width: 1024px) {

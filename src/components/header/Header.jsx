@@ -13,11 +13,15 @@ const Header = () => {
   const header = [
     {
       id: 1,
-      test: "Front-end Developer",
+      test: "Software Developer"
     },
     {
       id: 2,
-      test: "Debugger",
+      test: "Debugger"
+    },
+    {
+      id: 3,
+      test: "Problem Solver"
     }
   ];
   return (

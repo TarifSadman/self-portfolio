@@ -11,7 +11,6 @@ const Intro = () => {
     axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
       .then((res) => {
         setDp(res.data);
-        // console.log(res.data);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -22,14 +21,14 @@ const Intro = () => {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <img src={dp?.dp} alt="" />
+          <img src="/image.jpeg" alt="" />
         </div>
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1 year</small>
+              <small>1+ year</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />

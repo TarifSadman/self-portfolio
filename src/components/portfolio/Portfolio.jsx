@@ -7,8 +7,7 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Updated API URL to HTTPS
-    axios.get('https://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects')
+    axios.get('http://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects') // Use your Elastic Beanstalk API URL
       .then((res) => {
         setProjects(res.data);
       })

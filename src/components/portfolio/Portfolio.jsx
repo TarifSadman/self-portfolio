@@ -7,7 +7,8 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get('https://tarifsadman.online/projects')
+    // Updated API URL to HTTPS
+    axios.get('https://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects')
       .then((res) => {
         setProjects(res.data);
       })

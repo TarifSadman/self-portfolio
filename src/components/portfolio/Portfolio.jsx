@@ -4,11 +4,10 @@ import axios from "axios";
 import "./portfolio.css";
 
 const Portfolio = () => {
-
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get('http://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects')
+    axios.get('https://tarifsadman.online/projects')
       .then((res) => {
         setProjects(res.data);
       })
@@ -16,7 +15,6 @@ const Portfolio = () => {
   }, []);
 
   console.log(projects, "test---projects");
-
 
   return (
     <section id="portfolio">
@@ -26,20 +24,19 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {projects.map((pro) => (
           <article className="portfolio__item" key={pro.id}>
-          <div className="portfolio__item-image">
-            <img src={pro.image} alt={pro.title} />
-          </div>
-          <div className="portfolio__item-content">
-            <h3>{pro.title}</h3>
-            <p>{pro.description}</p>
-            <p>{pro.technologies}</p>
-          </div>
-          <div className="portfolio__item-cta">
-            <a href={pro.github} target="_blank" className="btn" rel="noreferrer">GitHub</a>
-            <a href={pro.link} target="_blank" className="btn btn-primary" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-        
+            <div className="portfolio__item-image">
+              <img src={pro.image} alt={pro.title} />
+            </div>
+            <div className="portfolio__item-content">
+              <h3>{pro.title}</h3>
+              <p>{pro.description}</p>
+              <p>{pro.technologies}</p>
+            </div>
+            <div className="portfolio__item-cta">
+              {pro.github && <a href={pro.github} target="_blank" className="btn" rel="noreferrer">GitHub</a>}
+              <a href={pro.link} target="_blank" className="btn btn-primary" rel="noreferrer">Live Demo</a>
+            </div>
+          </article>
         ))}
       </div>
     </section>

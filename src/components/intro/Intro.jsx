@@ -7,13 +7,13 @@ import "./intro.css";
 const Intro = () => {
   const [dp, setDp] = useState(null);
 
-  useEffect(() => {
-    axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
-      .then((res) => {
-        setDp(res.data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')
+  //     .then((res) => {
+  //       setDp(res.data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, []);
   
   return (
     <section id="about">

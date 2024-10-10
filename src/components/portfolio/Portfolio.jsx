@@ -7,11 +7,16 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get('http://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects') // Use your Elastic Beanstalk API URL
+    const apiUrl = 'https://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects';
+    // const apiUrl = 'http://localhost:3000/projects';
+
+    axios.get(apiUrl)
       .then((res) => {
         setProjects(res.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.error("Error fetching projects:", err.response ? err.response.data : err);
+      });
   }, []);
 
   console.log(projects, "test---projects");

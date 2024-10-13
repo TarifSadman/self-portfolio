@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const apiUrl = 'https://dynamodb-testrun-dev.ap-south-1.elasticbeanstalk.com/projects';
+    const apiUrl = 'https://redesigned-octo-spoon.vercel.app/projects';
     // const apiUrl = 'http://localhost:3000/projects';
 
     axios.get(apiUrl)

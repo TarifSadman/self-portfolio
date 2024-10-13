@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 import "./intro.css";
 
 const Intro = () => {
-  const [dp, setDp] = useState(null);
+  // const [dp, setDp] = useState(null);
 
   // useEffect(() => {
   //   axios.get('https://cooperative-calf-slippers.cyclic.app/api/resume')

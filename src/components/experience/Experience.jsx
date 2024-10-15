@@ -5,11 +5,9 @@ import './experience.css';
 const Experience = () => {
   return (
     <section id="experience">
-      {/* <h5>The Skills I Have</h5> */}
       <h2>Skills</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Front-end Development</h3>
           <div className="experience__content">
           <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
@@ -25,14 +23,6 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>React , Redux-toolkit</h4>
-            </article>
-            {/* <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Next Js</h4>
-            </article> */}
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>SASS/SCSS</h4>
             </article>
             <article className="experience__details">
@@ -42,6 +32,30 @@ const Experience = () => {
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Typescript</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>React JS</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Next JS</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Express JS</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Node JS</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>POSTGRESQL</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>MySQL</h4>
             </article>
           </div>
         </div>

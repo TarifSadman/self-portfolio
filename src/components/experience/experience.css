@@ -1,6 +1,6 @@
 .experience__container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column; /* Stack the main container items in a column */
     gap: 2rem;
 }
 
@@ -20,31 +20,33 @@
     cursor: default;
 }
 
-.experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
-}
-
+/* Use flexbox to allow wrapping */
 .experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 1.5rem; /* Space between items */
 }
 
+/* Control the size of articles for proper alignment */
 .experience__details {
     display: flex;
     gap: 1rem;
+    align-items: center; /* Center icon and text vertically */
+    width: calc(50% - 0.75rem); /* Each item takes half width minus half gap */
+    min-width: 250px; /* Minimum width to maintain layout */
+    text-align: center; /* Center text within the article */
 }
 
 .experience__details-icon {
-    margin-top: 6px;
     color: var(--color-primary);
 }
 
-@media screen and (max-width: 1024px){
+/* Media queries for responsive design */
+@media screen and (max-width: 1024px) {
     .experience__container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .experience__container > div {
@@ -53,12 +55,13 @@
         padding: 2rem;
     }
 
-    .experience__content p {
-        padding: 1rem;
+    .experience__content {
+        flex-direction: column; /* Stack items in a column on smaller screens */
+        align-items: center; /* Center all items in the column */
     }
 }
-  
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .experience__container {
         gap: 1rem;
     }
